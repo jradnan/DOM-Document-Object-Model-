@@ -1,0 +1,27 @@
+/* .alu{
+    text-align: center;
+    color: aqua !important;
+}
+
+.chips{
+    color: blue !important;
+} */
+
+.h1-1{
+    color: red;
+}
+
+.section-container{
+    color: red;
+    background-color: green;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: yellowgreen;
+    color: tomato;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 5px ;
+    border: 0px;
+}

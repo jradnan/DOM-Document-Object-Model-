@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="dom">Hello dom</h1>
+    <ul id="ul">
+        <li class="alu">Alu</li>
+        <li class="chips">potato</li>
+        <li class="chips">chips</li>
+        <li>crispy</li>
+    </ul>
+    <main id="main">
+    
+    </main>
+
+    <script src="dom.js"></script>
+    <button class="btn" id="btn" onclick="btnFunc()">Button</button>
+    <button class="btn"  onclick="document.body.style.backgroundColor='yellow'">Button</button>
+    <button class="btn"  onclick="makeBlack ()">Button</button>
+    <button class="btn"  onclick="makeWhite ()">Button</button>
+    <button class="btn"  id="make-orange">Button</button>
+    <button class="btn"   onclick="changeText()">Button</button>
+    
+    <p id="Df-Text">Default Text</p>
+    <input id="input-text" type="text">
+    <button class="btn"  id="change">Button</button>
+
+    <script>
+        function makeBlack (){
+            document.body.style.backgroundColor = "black"
+        }
+        function makeWhite (){
+            document.body.style.backgroundColor = "white"
+        }
+
+        const makeOrange = document.getElementById("make-orange")
+        makeOrange.addEventListener("click", makeItOrange)
+        function makeItOrange(){
+            document.body.style.backgroundColor = "orange"
+        }
+        function changeText(){
+            const inText = document.getElementById("dom")
+            inText.innerText = "Hello Javascript"
+        }
+
+        document.getElementById("change").addEventListener("click", function (){
+            const inputField = document.getElementById("input-text")
+            const inputValue = inputField.value;
+            const p = document.getElementById("Df-Text")
+            p.innerText = inputValue;
+            inputField.value= ""
+        })
+    </script>
+</body>
+</html>
